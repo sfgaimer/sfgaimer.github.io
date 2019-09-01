@@ -1,0 +1,6 @@
+catalog {background-color: lightgray;}
+Book {display:block; border: 1px solid silver; margin:0.5em; padding:0.5em;}
+Book:nth-of-type(odd) {
+  background: LightBlue;
+}
+Title {font-weight: bold; color: red;}
