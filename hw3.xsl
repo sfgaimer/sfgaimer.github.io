@@ -23,10 +23,10 @@
       <td><xsl:value-of select="Phone"/></td>
 	  <td><xsl:value-of select="E-mail"/></td>
 	  <xsl:if test="number(translate(Account_Total,'$','')) &lt;= number(80000)">
-        <td style="color:red;" align="right"> <xsl:value-of select="number(translate(Account_Total,'$',''))"/></td>
+        <td style="color:red;" align="right"> &#0036;<xsl:value-of select="format-number(number(translate(Account_Total,'$','')),'###,###.00')"/></td>
       </xsl:if>
 	  <xsl:if test="number(translate(Account_Total,'$','')) >  number(80000)">
-		<td align="right"><xsl:value-of select="number(translate(Account_Total,'$',''))"/></td>
+		<td align="right"> &#0036;<xsl:value-of select="format-number(number(translate(Account_Total,'$','')),'###,###.00')"/></td>
 	  </xsl:if>
 
     </tr>
