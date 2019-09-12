@@ -42,7 +42,7 @@ These are our clients:
 			.<br></br>
 		</xsl:when>
 		<xsl:when test="position()=(last()-1)">
-			and
+			, and
 		</xsl:when>	
 		<xsl:otherwise>	
 			,
