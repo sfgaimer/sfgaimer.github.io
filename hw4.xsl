@@ -36,16 +36,13 @@ a little bit more than <xsl:copy-of select="$MAXYEAR"/> years ago and now we hav
 These are our clients:
 <xsl:for-each select="Accounts/Client">
 	<xsl:sort select="Name/Last"/>
-	<xsl:value-of select="Name" /> 
+	<xsl:value-of select="normalize-space(concat(Name/Last,' ',Name/First))" />
 	<xsl:choose>
-		<xsl:when test="position()=last()">
-			.<br></br>
+		<xsl:when test="position()=last()">.<br></br>
 		</xsl:when>
-		<xsl:when test="position()=(last()-1)">
-			, and
+		<xsl:when test="position()=(last()-1)">, and
 		</xsl:when>	
-		<xsl:otherwise>	
-			,
+		<xsl:otherwise>,
 		</xsl:otherwise>		
 	</xsl:choose>
 </xsl:for-each> 
