@@ -1,12 +1,16 @@
 <?xml version="1.0" ?>
 <!DOCTYPE Products [
-<!ELEMENT Prod (Details,Quantity,Unit_Price,Loc,Color?)>
+<!ELEMENT Products (Prod+)>
+<!ELEMENT Prod (Details,Quantity,Unit_Price,Color?,Loc)>
 <!ATTLIST Prod ProdID ID #REQUIRED>
 <!ELEMENT Details (Short_Desc,Long_Desc)>
 <!ELEMENT Short_Desc (#PCDATA)>
 <!ELEMENT Long_Desc (#PCDATA)>
 <!ELEMENT Quantity (#PCDATA)>
 <!ELEMENT Unit_Price (#PCDATA)>
+<!ELEMENT Loc (#PCDATA)>
+<!ELEMENT Color (#PCDATA)>
+<!ENTITY MadeInUSA "Made in USA">
 ]>
 <Products>
 
@@ -28,7 +32,7 @@
 <Quantity>30</Quantity>
 <Unit_Price>5.50</Unit_Price>
 <Color>White</Color>
-<Loc>Made in USA</Loc>
+<Loc>&MadeInUSA;</Loc>
 </Prod>
 
 <Prod ProdID="P3256788">
