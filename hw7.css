@@ -1,0 +1,5 @@
+@namespace url(http://www.gov.org/east");
+@namespace w "http://www.gov.org/west";
+
+state {display:block;}
+w|state {background: LightBlue;}

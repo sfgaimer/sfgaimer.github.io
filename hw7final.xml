@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="hw7.css"?>
+<root xmlns="http://www.gov.org/east"
+xmlns:w="http://www.gov.org/west">
+
+  <w:states>
+    <w:state>
+      <w:name>California</w:name>
+      <w:capital>Sacramento</w:capital>
+    </w:state>
+    <w:state>
+      <w:name>Washington</w:name>
+      <w:capital>Olympia</w:capital>
+    </w:state>
+    <w:state>
+      <w:name>Oregon</w:name>
+      <w:capital>Salem</w:capital>
+    </w:state>
+  </w:states>
+
+  <states >
+    <state>
+      <name>Florida</name>
+      <capital>Tallahassee</capital>
+    </state>
+    <state>
+      <name>Maryland</name>
+      <capital>Annapolis</capital>
+    </state>
+    <state>
+      <name>North Carolina</name>
+      <capital>Raleigh</capital>
+    </state>
+  </states>
+</root>
