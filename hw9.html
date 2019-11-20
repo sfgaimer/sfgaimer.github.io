@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>CNIT 131A SVG</title>
 <style>
 .title{
  text-align: center;
@@ -13,24 +14,18 @@
   color: #fff;
 }
 
-.row {
-  display: flex;
+.heading{
+font-size: 1.5; font-family:"Verdana";
+align-items: center;
+
 }
 
-.row .col {
+.row {
   flex: 1;
   display: flex;
   align-items: center;
   margin: 5px;
 }
-
-.row .col svg {
-  flex: 1;
-  margin: 5px;
-}
-
-
-
 </style>
 </head>
 <body>
@@ -38,7 +33,19 @@
 <p class="title">
 Here are some wonderful SVG graphics 
 </p>
+<p>
+I chose to include the SVG element directly in the HTML because I am using HTML5 and because in my opinion this is cleaner and easer
+to style using CSS. I understood that this technique is supported in all major desktop web browsers for versions released in 2012 and later so I don't believe there are downsides to this. 
+</p>
 <div class="container">
+<div class="heading">
+<svg>
+   <rect x="10" y=15" width="55px" height="35px" fill="red" />
+   <rect x="65" y=15" width="150px" height="35px" fill="lime" />
+   <text x="15" y="20" fill="white">SVG </text>
+   <text x="70" y="20" fill="black">CNIT 131A </text>
+</svg>
+</div>
 <div class="row">
 <svg width="400" height="110">
   <rect width="300" height="100" style="fill:yellow;stroke-width:3;stroke:rgb(0,0,255)" />
